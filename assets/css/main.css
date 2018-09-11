@@ -4,23 +4,31 @@
 
 html {
     background-color: white;
+    font-family: sans-serif;
 }
 
 body {
     margin: 0;
 }
 
-figure {
+main {
     width: 100%;
     max-width: 900px;
-    padding: 20px 20px;
-    margin: 0;
     margin-left: auto;
     margin-right: auto;
 }
 
+figure {
+    width: 100%;
+    padding: 20px 40px;
+    margin: 0;
+}
+
 figcaption {
     margin: 10px 0px 20px 0px;
+    font-style: italic;
+    padding-top: 20px;
+    font-size: 0.75em;
 }
 
 img {
@@ -29,10 +37,12 @@ img {
 
 dl {
     margin: 0;
+    margin-top: 0.75em;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
+    padding: 20px 40px 0px 40px;
 }
 
 dt, dd {
@@ -42,4 +52,8 @@ dt, dd {
 
 dd {
     margin: 0;
+}
+
+a {
+    word-break: break-all;
 }

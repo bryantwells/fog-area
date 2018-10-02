@@ -1,0 +1,17 @@
+Title: Themes
+
+----
+
+Text: These are pages that I'll update on an ongoing basis. Big thoughts on a variety of themes.
+
+----
+
+Info: 
+
+----
+
+Order-by: 0
+
+----
+
+User-defined-order: 0

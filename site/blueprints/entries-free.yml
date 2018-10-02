@@ -1,0 +1,24 @@
+title: Entries (free order)
+
+files: false
+
+pages:
+  template: entry
+
+fields:
+  title:
+    label: Title
+    type: title
+    required: true
+
+  text:
+    label: Text
+    type: textarea
+
+  info:
+    label: Hint
+    type: info
+    text: >
+      This page fetches its subpages and displays them as entries.<br><br>
+      To fill this page with content, just hit the <b>Add</b> button
+      to create a new entry.

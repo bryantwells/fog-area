@@ -1,0 +1,58 @@
+Title: Questions
+
+----
+
+Date: 2018-09-18
+
+----
+
+Text: 
+
+- What is programming?
+- What is writing?
+- Is programming like writing?
+- Is writing like programming?
+- Is coding writing?
+- Is writing coding?
+- (Are programming and coding the same?)
+- Why does one create a program?
+- Why does one write an essay? A poem? A letter?
+- What is interactivity?
+- What is hypertext?
+- Is literature like hypertext?
+- Can something be more interactive than something else?
+- How does writing influence programming?
+- How does programming influence writing?
+- Can coding be creative?
+- How much subjectivity can a computer program sustain?
+- Are programming languages really languages?
+- Is the language we speak some sort of programming language?
+- How do you define a language?
+- Can programming be difficult to read or illegible like handwriting?
+- How might generosity affect a program?
+- Can a program be an poem, an essay, a conversation?
+- Can you rhyme in code?
+- Does code have a beginning, middle, and end? Can code tell a story?
+- What’s the purpose of a poem?
+- Does a poem have to be made of words?
+- How could a poem be different as web-based or networked?
+- How does a piece of writing die?
+- When a website dies, does it stop being relevant?
+- While websites on the www can be seen worldwide, does code have some sort of geopolitical power?
+- Is programming a limited language for most of us who are not a professional programmer?
+- If the physical world disappeared today, would the internet still exist? Could the internet recreate the physical world?
+- People who write literature are into genres. Are there coders who code in certain genres? Or people who make websites in specific genres?
+- Can a website be archived or inherited? How good does the writing have to be on a website to be preserved?
+- Is there such a thing as coding language literacy? How can you know if you’re literate coder?
+
+----
+
+Color: #a80a0a
+
+----
+
+Identifying-color: #05c9ff
+
+----
+
+Hide-date: 1

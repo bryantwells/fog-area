@@ -2,4 +2,4 @@ Title: Home
 
 ----
 
-Text: Welcome to my pebble notebook... :)
+Text: Welcome to the Fog Area

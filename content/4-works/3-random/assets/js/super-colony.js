@@ -123,4 +123,4 @@ class Leaf {
 }
 
 const superColony = new SuperColony('.SuperColony')
-superColony.excite(200, 15)
+superColony.excite(150, 15)

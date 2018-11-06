@@ -13,8 +13,8 @@
 
     <body>
 
-        <header class="Header">
+        <!-- <header class="Header">
             <?php snippet('menu')?>
-        </header>
+        </header> -->
         
         <main class="Main">

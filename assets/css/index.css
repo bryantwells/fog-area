@@ -1,6 +1,26 @@
-* { box-sizing: border-box }
+* { 
+    box-sizing: border-box;
+    filter: blur(5px);
+    transition: filter 0.25s;
+}
+
+*:hover { 
+    filter: blur(0px);
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-size: unset;
     font-weight: unset;
+}
+
+.Entries {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.Entries-item {
+    flex: 0 0 33%;
+    min-height: 5em;
+    padding: .5em;
 }

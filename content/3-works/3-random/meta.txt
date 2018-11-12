@@ -1,9 +1,0 @@
-Title: Oversize Insects
-
-----
-
-Date: 2018-10-09
-
-----
-
-ContentFile: index.html

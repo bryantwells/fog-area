@@ -1,9 +1,0 @@
-Title: Fancy Room
-
-----
-
-Date: 2018-10-02
-
-----
-
-ContentFile: index.html

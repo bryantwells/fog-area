@@ -1,9 +1,0 @@
-Title: Room
-
-----
-
-Date: 2018-09-15
-
-----
-
-ContentFile: index.html

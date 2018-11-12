@@ -1,9 +1,0 @@
-Title: Excersizes in Style
-
-----
-
-Date: 2018-11-02
-
-----
-
-ContentFile: index.php

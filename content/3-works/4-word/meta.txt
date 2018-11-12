@@ -1,9 +1,0 @@
-Title: Sheesh Crease
-
-----
-
-Date: 2018-10-16
-
-----
-
-ContentFile: index.html

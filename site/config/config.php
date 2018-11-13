@@ -33,10 +33,22 @@ c::set('debug', true);
 
 c::set('routes', array(
     array(
+
+        // route rule for any url that starts with 'works/'
+        // like 'works/room', 'works/fancy-room', etc...
+
+        // the url pattern
         'pattern' => 'works/(:any)',
+
+        // the action performed when the url is hit
         'action' => function ($uid) {
-            $page = site()->children()->works()->find($uid);
-            go('content/1-works/' . $page->num() . '-' . $uid . '/');
+
+            // get the sort number for the page associated with the UID (:any)
+            $sortNum = site()->children()->works()->find($uid)->num();
+
+            // redirect to the actual page
+            go('content/1-works/' . $sortNum . '-' . $uid . '/');
         },
+
     ),
 ));

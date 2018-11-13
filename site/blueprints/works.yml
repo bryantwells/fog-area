@@ -1,0 +1,15 @@
+title: Works
+
+fields:
+
+  title:
+    label: Title
+    type:  text
+
+  onHomepage:
+    label: On homepage?
+    type:  checkbox
+    
+  hasLinks:
+    label: Do subpages have links?
+    type:  checkbox

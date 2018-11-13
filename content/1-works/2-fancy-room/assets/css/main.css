@@ -1,0 +1,282 @@
+* { box-sizing: border-box; }
+
+:root {
+    --nav-width: 15%;
+
+    --bg-color-sideA: honeydew;
+    --bg-color-sideB: hsl(0,0%,15%);
+    --bg-color-sideC: peru;
+    --bg-color-sideD: lemonchiffon;
+    --bg-color-sideE: silver;
+    --bg-color-sideF: skyblue;
+
+    --color-sideA: saddlebrown;
+    --color-sideB: black;
+    --color-sideC: saddlebrown;
+    --color-sideD: tomato;
+    --color-sideE: lightgrey;
+    --color-sideF: white;
+}
+
+html {
+    font-size: 30px;
+}
+
+.Main h1 {
+    margin: 0;
+    transform-origin: top center;
+    font-size: unset;
+    font-weight: unset;
+    position: absolute;
+    transition: top .25s, right .25s, bottom .25s, left .25s;
+}
+
+.Main:not(.is-rotated--90):not(.is-rotated--180):not(.is-rotated--270) h1 {
+    top: calc(50% + 0px);
+    transform: translateY(-50%);
+}
+
+    .Main:not(.is-rotated--90):not(.is-rotated--180):not(.is-rotated--270):hover h1  {
+        top: calc(0% + 30px);
+    }
+
+.Main.is-rotated--90 h1 {
+    top: 50%;
+    right: calc(50% + 0px);
+    transform: translateX(100%) rotate(90deg);
+}
+
+    .Main.is-rotated--90:hover h1 {
+        right: calc(0% + 30px);
+    }
+
+.Main.is-rotated--180 h1 {
+    bottom: calc(50% + 0px);
+    left: 50%;
+    transform: translateX(-50%) translateY(150%) rotate(180deg);
+}
+
+    .Main.is-rotated--180:hover h1 {
+        bottom: calc(0% + 30px);
+    }
+
+.Main.is-rotated--270 h1 {        
+    transform: translateX(-100%) rotate(270deg);
+    top: 50%;
+    left: calc(50% + 0px);
+}
+
+    .Main.is-rotated--270:hover h1 {
+        left: calc(0% + 30px);
+    }
+
+img {
+    max-width: 400px;
+    margin:auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+
+/* CONTENT */
+
+.Main {
+    position: absolute;
+    z-index: 1;
+    top: calc(var(--nav-width) - .5%);
+    right: calc(var(--nav-width) - .5%);
+    bottom: calc(var(--nav-width) - .5%);
+    left: calc(var(--nav-width) - .5%);
+    background-color: white;
+    border: 1px solid black;
+    transition: top .25s, right .25s, bottom .25s, left .25s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+    .Main--a:hover {
+        background-color: lemonchiffon;
+    }
+
+.Main:hover {
+    top: calc(var(--nav-width) / 2);
+    right: calc(var(--nav-width) / 2);
+    bottom: calc(var(--nav-width) / 2);
+    left: calc(var(--nav-width) / 2);
+}
+
+.Content {
+    transform-origin: center;
+    opacity: 0;
+    transition: opacity .1s;
+}
+
+    .Main:hover .Content {
+        opacity: 1;
+        transition: opacity 20s;
+        transition-delay: 2s;
+    }
+
+    .Main.is-rotated--90 .Content {
+        transform: rotate(90deg);
+    }
+    
+    .Main.is-rotated--180 .Content {
+        transform: rotate(180deg);
+    }
+    
+    .Main.is-rotated--270 .Content {
+        transform: rotate(270deg);
+    }
+
+    .Main.is-sideA:hover {
+        background-color: var(--bg-color-sideA);
+        color: var(--color-sideA);
+    }
+
+    .Main.is-sideB:hover {
+        background-color: var(--bg-color-sideB);
+        color: var(--color-sideB);
+    }
+
+    .Main.is-sideC:hover {
+        background-color: var(--bg-color-sideC);
+        color: var(--color-sideC);
+    }
+
+    .Main.is-sideD:hover {
+        background-color: var(--bg-color-sideD);
+        color: var(--color-sideD);
+    }
+
+    .Main.is-sideE:hover {
+        background-color: var(--bg-color-sideE);
+        color: var(--color-sideE);
+    }
+
+    .Main.is-sideF:hover {
+        background-color: var(--bg-color-sideF);
+        color: var(--color-sideF);
+    }
+
+    .Content p {
+        max-width: 400px;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+    }
+
+
+/* NAV */
+
+.Nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.Nav-item {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: painted;
+    fill: white;
+    stroke: black;
+    stroke-width: 1px;
+}
+
+    .Nav-item.is-sideA:hover .Nav-shape {
+        fill: var(--bg-color-sideA);
+    }
+
+    .Nav-item.is-sideB:hover .Nav-shape {
+        fill: var(--bg-color-sideB);
+    }
+
+    .Nav-item.is-sideC:hover .Nav-shape {
+        fill: var(--bg-color-sideC);
+    }
+
+    .Nav-item.is-sideD:hover .Nav-shape {
+        fill: var(--bg-color-sideD);
+    }
+
+    .Nav-item.is-sideE:hover .Nav-shape {
+        fill: var(--bg-color-sideE);
+    }
+
+    .Nav-item.is-sideF:hover .Nav-shape {
+        fill: var(--bg-color-sideF);
+    }
+
+    .Nav-item--l, .Nav-item--r {
+        width: var(--nav-width);
+        height: 100%;
+        z-index: 0;
+    }
+
+    .Nav-item--u, .Nav-item--d {
+        width: 100%;
+        height: var(--nav-width);
+        z-index: 1;
+    }
+
+    .Nav-item--l, .Nav-item--u {
+        top: 0;
+        left: 0;
+    }
+
+    .Nav-item--r, .Nav-item--d {
+        right: 0;
+        bottom: 0;
+    }
+
+.Nav-shape {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: visible;
+}
+
+    .Nav-shape polygon {
+        vector-effect: non-scaling-stroke;
+    }
+
+.Nav-label {
+    position: absolute;
+    text-transform: uppercase;
+    transform-origin: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity .25s;
+}
+
+    .Nav-label.is-rotated--90 {
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    .Nav-label.is-rotated--180 {
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+
+    .Nav-label.is-rotated--270 {
+        transform: translate(-50%, -50%) rotate(270deg);
+    }
+
+    .Main:hover + .nav .Nav-label {
+        opacity: 0;
+    }

@@ -1,6 +1,5 @@
-title: Page
-pages: true
-files: true
+title: Meta
+
 fields:
   title:
     label: Title

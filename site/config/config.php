@@ -28,3 +28,15 @@ make Kirby work. For more fine-grained configuration
 of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
+
+c::set('debug', true);
+
+c::set('routes', array(
+    array(
+        'pattern' => 'works/(:any)',
+        'action' => function ($uid) {
+            $page = site()->children()->works()->find($uid);
+            go('content/1-works/' . $page->num() . '-' . $uid . '/');
+        },
+    ),
+));

@@ -1,0 +1,107 @@
+/* RESET */
+/* -------------------------------- */
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; }
+
+h1, h2, h3, h4, h5 {
+    font-size: unset;
+    font-weight: unset;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+ul { margin: 0; }
+
+
+/* STYLES */
+/* -------------------------------- */
+
+html {
+    background-color: #bbc2cc;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+header, main {
+    padding: 1em;
+}
+
+header {
+    /* text-align: center; */
+    position: sticky;
+    top: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 0.5em;
+    border-radius: 0.25em;
+}
+
+h1::before {
+    content: '⚠ ';
+    vertical-align: bottom;
+}
+
+h1::after {
+    content: ' ⚠';
+    vertical-align: bottom;
+}
+
+.EntryList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.EntryList-item {
+    min-height: 10em;
+    flex: 0 0 20%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.EntryList-title--work::before {
+    content: '○';
+}
+
+.EntryList-title--work:hover::before {
+    content: '●';
+}
+
+.EntryList-image {
+    width: 100%;
+    height: auto;
+}
+
+.u-foggy {
+    transition: filter 0.5s;
+    filter: blur(0.15em);
+    backface-visibility: hidden;
+    perspective: 1000;
+    transform: translate3d(0,0,0);
+    transform: translateZ(0);
+}
+
+.u-foggy:hover {
+    filter: blur(0em);
+}
+
+.u-veryFoggy {
+    filter: blur(1.25em);
+    transition: filter 0.5s;
+}
+
+.u-veryFoggy:hover {
+    filter: blur(1em);
+}

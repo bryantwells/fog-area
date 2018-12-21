@@ -4,6 +4,8 @@ class Bug {
         this.parent = parent
         this.letter = letter
         this.element = document.createElement('bug')
+        this.element.style.top = '0px'
+        this.element.style.left = '0px'
 
         this.make()
     }
@@ -42,6 +44,8 @@ class Colony {
         this.bugs = word.trim().split('')
             .map(letter => new Bug(this.element, letter))
         this.element = document.createElement('colony')
+        this.container = document.createElement('div')
+        this.container.classList.add('ColonyContainer')
 
         this.make()
     }
@@ -49,7 +53,16 @@ class Colony {
     make() {
         this.element.innerHTML = ''
         this.bugs.forEach((bug) => {
-            this.element.appendChild(bug.element)
+            this.element.appendChild(this.container)
+            this.container.appendChild(bug.element)
+        })
+
+        this.element.addEventListener('click', () => {
+            console.log('click')
+            this.bugs.forEach((bug) => {
+                bug.element.style.top = '0px';
+                bug.element.style.left = '0px';
+            })
         })
     }
 
@@ -123,4 +136,4 @@ class Leaf {
 }
 
 const superColony = new SuperColony('.SuperColony')
-superColony.excite(150, 15)
+superColony.excite(1000, 15)
